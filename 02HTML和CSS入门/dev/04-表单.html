@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<form action="/abc">
+		用户名<input type="text" name="username" value="张三">
+		<br/>
+		密码<input type="password" name="pwd" >
+		<br/>
+		性别：  男<input type="radio" name="sex" value="男"> 女<input type="radio" name="sex" value="女">
+		<br/>
+		爱好：  足球<input type="checkbox" name="hobby" value="football"> 篮球<input type="checkbox" name="hobby" value="basketball"> 乒乓<input type="checkbox" name="hobby" value="pingpang">
+		<br/>
+		经验：  <select name = "experience">
+			<option value="0">--无--</option>
+			<option value="1">1年</option>
+			<option value="2">2-3年</option>
+			<option value="3">3-5年</option>
+			<option value="4">5-10年</option>
+		</select>
+		<br/>
+		上传：  <input type="file" name="avatar" multiple="">
+		<br/>
+		描述：  <textarea name="desc" cols="30" rows = "4" >多行文本框，可以输入多段文字。可以显示长文本。
+		</textarea>
+		<br/>
+		<input type="submit" value="提交" >
+</body>
+</html>
