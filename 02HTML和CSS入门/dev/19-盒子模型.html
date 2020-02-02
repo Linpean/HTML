@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>盒子模型</title>
+	<style type="text/css">
+		.content1{
+			width: 800px;
+			height: 200px;
+			background-color: blue;
+			color: white;
+		}
+		.padding1{
+			width: 800px;
+			height: 200px;
+			background-color: green;
+			color: white;
+			padding: 10px 50px 100px 100px;
+			margin:100px;	
+		}
+		.box{
+			width: 200px;
+			height:200px;
+			background-color: blue;
+			color: white;
+			padding: 1px;
+			}
+		.inner_box{
+			width:100px;
+			height:100px;
+			background-color: pink;
+			color: white;
+			margin: 50px;
+		}
+		.border1{
+			width:100px;
+			height:100px;
+			background-color: pink;
+			color: white;
+			margin: 50px;
+			border: 10px solid red;
+			border-left: 10px dashed green;
+		}
+	</style>
+</head>
+<body>
+	<div class = "content1">
+		内容区域
+	</div>
+	<div class = "padding1">
+		可以按顺序指明上、右、下、左四个方向的内边距大小.
+		`padding: 10px 20px 30px 60px;`.
+		如果只是三个参数，则指代上，左右，下的内边距大小.
+		如果只是两个参数，则指代上下，左右的内边距大小.
+		如果只有一个参数，则统一设置四个方向内边距大小.
+		css还额外提供了padding-top, padding-left, padding-right, padding-bottom分别来指定四个方向上的内边距.
+	</div>
+	
+	<div class = "box">
+		内容区域
+		<div class = "inner_box">
+			内容区域
+		</div>
+	</div>
+
+	<div class = "border1">
+		
+	</div>
+</body>
+</html>
